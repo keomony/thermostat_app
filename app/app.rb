@@ -1,8 +1,8 @@
 require 'sinatra/base'
 
-class thermostatApp < Sinatra::Base
+class ThermostatApp < Sinatra::Base
   get '/' do
-    'Hello thermostatApp!'
+    erb :index
   end
 
   # start the server if ruby file executed directly

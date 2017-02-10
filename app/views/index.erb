@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <script src="./js/lib/jquery-3.1.1.js"></script>
+    <script src="./js/Thermostat.js"></script>
+    <script src="./js/interface.js"></script>
+    <script>
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Thermostat</h1>
+        <h2>Temperature is <a id='temp_display'>20</a> degrees</h2>
+        <h2>In <a id='cityDisplay'>city</a>, the temperature is <a id='cityTemp'></a></h2>
+        <section>
+          <h1>Select your city:</h1>
+          <select id='currentCity'>
+            <option value='london'>London</option>
+            <option value='dubai'>Dubai</option>
+            <option value='newyork'>New York</option>
+            <option value='hongkong'>Hong Kong</option>
+            <option value='tokyo'>Tokyo</option>
+          </select>
+        </section>
+      </div>
+      <p>
+        <div id="centerColumn">
+            <button class='thermo' id="up">Up</button>
+            <button class='thermo' id="down">Down</button>
+            <button class='thermo' id="reset">Reset</button>
+            <button class='thermo' id="powerSavingMode">PowerSaving</button>
+            <p> Power saving mode is currently <a id='psm_display'>ON</a></p>
+            <p>current energy usage <a id='energy_display'></a></p>
+
+        </div>
+      </p>
+    </div>
+  </body>
+</html>
